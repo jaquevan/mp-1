@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui;
+
+}
+
+.header, .footer{
+    background-color: darkslategray;
+    color: white;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: darkcyan;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    /*creates a moving card animation while scrolling*/
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+
+}
+
+.card img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    z-index: 2;
+}
+.card-content {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
